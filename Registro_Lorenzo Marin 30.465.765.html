@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Estilos_Registro Lorenzo Marin 30.465.765.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="Img/Icono_Cohete.png" type="image/x-icon">
+    <title>Formulario de registro</title>
+    <script src="Validacion_Registro.js"></script>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <form onsubmit="return validarRegistro()">
+        <div class="form-group">
+            <label for="nombres"><i class="fa fa-user input-icon"></i>Nombres:</label>
+            <input type="text" id="nombres" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="apellidos"><i class="fa fa-user input-icon"></i>Apellidos:</label>
+            <input type="text" id="apellidos" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="usuario"><i class="fa fa-user input-icon"></i>Usuario:</label>
+            <input type="text" id="usuario" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="correo"><i class="fa fa-envelope input-icon"></i>Correo:</label>
+            <input type="email" id="correo" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="contrasena"><i class="fa fa-lock input-icon"></i>Contraseña:</label>
+            <input type="password" id="contrasena" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="edad"><i class="fa fa-birthday-cake input-icon"></i>Edad:</label>
+            <input type="number" id="edad" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono"><i class="fa fa-phone input-icon"></i>Teléfono:</label>
+            <input type="tel" id="telefono" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <label for="direccion"><i class="fa fa-map-marker input-icon"></i>Dirección:</label>
+            <input type="text" id="direccion" class="campo-requerido">
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn" onclick="validarRegistro()">Registrar</button>
+        </div>
+    </form>
+</body>
+</html>
